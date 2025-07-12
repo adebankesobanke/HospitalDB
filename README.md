@@ -80,13 +80,31 @@ Hospital_DB/
 - GitHub Desktop
 
 ## 🚀 Future Enhancements
+ Future Enhancements
+Add ER Diagram (Entity-Relationship Model):
+Visualize table relationships to aid database understanding and presentation.
 
-- Add ER diagram (entity-relationship model)
-- Automate inserts with stored procedures
-- Create reusable views for reporting
-- Integrate with Python dashboard for visualization
+Automate Inserts with Stored Procedures:
+Create stored procedures for routine data insertions and updates to improve efficiency and maintainability.
 
----
+Create Reusable Views for Reporting:
+Design SQL views for common queries such as appointment summaries, billing reports, and treatment statistics for quick retrieval and reporting.
+
+Implement Advanced Queries and Window Functions:
+Further analyze patient data trends and treatment outcomes using ranking, partitioning, and analytical functions.
+
+Build Stored Functions and Triggers:
+Automate data validation and update cascades to maintain database integrity.
+
+Integrate with a Python Dashboard for Visualization:
+Use Streamlit or Dash to build interactive dashboards showing patient counts, appointment trends, doctor performance, and billing summaries.
+
+Develop a REST API Layer:
+Connect the database to frontend applications or external systems through a secure API built with Flask or FastAPI.
+
+Deploy on Cloud Database Platforms:
+Practice deploying the database on cloud providers (AWS RDS, Azure SQL) for scalability and production-readiness.
+
 
 ## 👤 Author
 
