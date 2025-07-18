@@ -7,3 +7,4 @@ CREATE TABLE Appointments (
     status VARCHAR(50) DEFAULT 'Scheduled',
     FOREIGN KEY (patient_id) REFERENCES Patients(patient_id),
     FOREIGN KEY (doctor_id) REFERENCES Doctors(doctor_id)
+    );
