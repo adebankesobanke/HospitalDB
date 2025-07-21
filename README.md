@@ -44,7 +44,7 @@ Hospital_DB/
 │ └── billings_data.csv
 ├── README.md
 
-Database Enhancement and Business Value
+##**Database Enhancement and Business Value**
 Database Enhancement: Added views for active doctors, materialized views for branch revenue, age calculations for patients and realistic admission dates
 Business Value: Supports rapid operational reporting, ensures data integrity for decision making, and enables analytics on patients demographics and branch revenue performance.
 
