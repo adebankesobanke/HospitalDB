@@ -14,35 +14,55 @@ This SQL project simulates a basic hospital management system. It demonstrates e
 ## 🗂️ Project Structure
 Hospital_DB/
 ├── schema/
-│ ├── appointment_table.sql
-│ ├── patients_table.sql
-│ ├── doctors_table.sql
-│ ├── treatments_table.sql
-│ ├── diagnoses_table.sql
-│ ├── medications_table.sql
-│ ├── medical_visits_table.sql
-│ └── billings_table.sql
+│   ├── patients_table.sql
+│   ├── doctors_table.sql
+│   ├── appointments_table.sql
+│   ├── treatments_table.sql
+│   ├── medications_table.sql
+│   ├── diagnoses_table.sql
+│   ├── medical_visits_table.sql
+│   ├── billings_table.sql
+│   ├── branches_table.sql
 │
 ├── inserts/
-│ ├── appointment_insertion.sql
-│ ├── patients_insertion.sql
-│ ├── doctors_insertion.sql
-│ ├── treatments_insertion.sql
-│ ├── diagnoses_insertion.sql
-│ ├── medications_insertion.sql
-│ ├── medical_visits_insertion.sql
-│ └── billings_insertion.sql
+│   ├── patients_insertion.sql
+│   ├── doctors_insertion.sql
+│   ├── appointments_insertion.sql
+│   ├── treatments_insertion.sql
+│   ├── medications_insertion.sql
+│   ├── diagnoses_insertion.sql
+│   ├── medical_visits_insertion.sql
+│   ├── billings_insertion.sql
+│   ├── branches_insertion.sql
+│
+├── views/
+│   ├── active_doctors_view.sql          # View showing doctors with current appointments
+│
+├── materialized_views/
+│   ├── branch_revenue_summary.sql       # Materialized view for total revenue per branch
+│
+├── enhancements/
+│   ├── add_birthdate_to_patients.sql    # ALTER TABLE script to add birth_date column
+│   ├── calculate_patient_age.sql        # Query to calculate patient ages
+│   ├── realistic_admission_dates.sql    # Update script for realistic admission dates
 │
 ├── data/
-│ ├── appointments_data.csv
-│ ├── patients_data.csv
-│ ├── doctors_data.csv
-│ ├── treatments_data.csv
-│ ├── diagnoses_data.csv
-│ ├── medications_data.csv
-│ ├── medical_visits_data.csv
-│ └── billings_data.csv
+│   ├── patients_data.csv
+│   ├── doctors_data.csv
+│   ├── appointments_data.csv
+│   ├── treatments_data.csv
+│   ├── medications_data.csv
+│   ├── diagnoses_data.csv
+│   ├── medical_visits_data.csv
+│   ├── billings_data.csv
+│   ├── branches_data.csv
+│
+├── ETL/
+│   ├── daily_appointments_etl.sql       # Example ETL pipeline script for appointments
+│   ├── branch_revenue_etl.sql           # ETL for branch revenue aggregation
+│
 ├── README.md
+
 
 ##**Database Enhancement and Business Value**
 Database Enhancement: Added views for active doctors, materialized views for branch revenue, age calculations for patients and realistic admission dates
