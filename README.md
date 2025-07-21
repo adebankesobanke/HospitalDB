@@ -44,33 +44,37 @@ Hospital_DB/
 │ └── billings_data.csv
 ├── README.md
 
+Database Enhancement and Business Value
+Database Enhancement: Added views for active doctors, materialized views for branch revenue, age calculations for patients and realistic admission dates
+Business Value: Supports rapid operational reporting, ensures data integrity for decision making, and enables analytics on patients demographics and branch revenue performance.
+
 ## 🧠 SQL Skills Demonstrated
 
-1. **Database Design & Modeling**  
+1. Database Design & Modeling  
    - Normalized entities into separate tables  
    - Defined `PRIMARY KEY` and `FOREIGN KEY` relationships
 
-2. **Data Definition Language (DDL)**  
+2. Data Definition Language (DDL)
    - Created schemas with `CREATE TABLE`  
    - Used constraints (`NOT NULL`, `DEFAULT`, `CHECK`)
 
-3. **Data Manipulation Language (DML)**
+3. Data Manipulation Language (DML)
    - Inserted records with `INSERT INTO` scripts  
    - Updated and deleted data as needed
 
-4. **Filtering & Querying Data**  
+4. Filtering & Querying Data
    - Used `SELECT`, `WHERE`, `ORDER BY`, `BETWEEN`, etc.
 
-5. **Joins**  
+5. Joins
    - Combined data across related tables with `LEFT JOIN`
 
-6. **Aggregations & Grouping**  
+6. Aggregations & Grouping
    - Used `COUNT`, `SUM`, `AVG`, `GROUP BY`, and `HAVING`
 
-7. **Subqueries** 
+7. Subqueries 
    - Used nested `SELECT` for filtering and analytics
 
-8. **Data Integrity & Constraints**  
+8. Data Integrity & Constraints 
    - Enforced valid data using relational constraints
 
 
