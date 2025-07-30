@@ -1,7 +1,9 @@
 # HospitalDB
 # 🏥 Hospital Database Project
 
-This SQL project simulates a basic hospital management system. It demonstrates essential relational database skills including schema design, data population, and querying for insights.
+This SQL project simulates a basic hospital management system. It demonstrates essential relational database skills including schema design, data population, and querying for insights, and is split into two phases as follows:
+Phase 1: Schema design and core queries
+Phase 2: Advanced database design, ETL pipeline simulation, automation and optimization
 
 ## 📌 Project Objectives
 
