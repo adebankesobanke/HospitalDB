@@ -5,6 +5,8 @@ This SQL project simulates a basic hospital management system. It demonstrates e
 Phase 1: Schema design and core queries
 Phase 2: Advanced database design, ETL pipeline simulation, automation and optimization
 
+Phase 1: Schema Design and Core Queries
+
 ## 📌 Project Objectives
 
 - Design a normalized relational database for hospital operations
