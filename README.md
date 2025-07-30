@@ -15,57 +15,78 @@ Phase 1: Schema Design and Core Queries
 - Populate tables with sample data using SQL scripts and CSV files
 - Perform analytical queries for real-world healthcare scenarios
 
-## 🗂️ Project Structure
-Hospital_DB/
-├── schema/
-│   ├── patients_table.sql
-│   ├── doctors_table.sql
-│   ├── appointments_table.sql
-│   ├── treatments_table.sql
-│   ├── medications_table.sql
-│   ├── diagnoses_table.sql
-│   ├── medical_visits_table.sql
-│   ├── billings_table.sql
-│   ├── branches_table.sql
+# 🏥 HospitalDB: Relational Database & Advanced ETL Simulation Project
+
+A comprehensive, two-phase portfolio project simulating a Hospital Management System. This project showcases relational database design, SQL querying, data automation using stored procedures, and simulated ETL pipelines using Airflow-style logic.
+
+## 📌 Project Objectives
+
+This project demonstrates progression from core database design to advanced SQL techniques and data engineering workflows—ideal for roles in data engineering, analytics, and technical product/data management.
+
+---
+
+### 🔹 Phase 1: Core Hospital Database Design
+
+**Goal:** Build a normalized PostgreSQL database with core hospital entities and sample data.
+
+**Objectives:**
+- Design normalized tables for:
+  - `Doctors`
+  - `Patients`
+  - `Appointments`
+  - `Billings`
+  - `Branches`
+- Implement primary and foreign key constraints.
+- Populate tables with sample data using SQL insert scripts.
+- Write exploratory SQL queries for:
+  - Hospital revenue tracking
+  - Appointment completion rates
+  - Branch performance insights
+- Demonstrate SQL proficiency and schema modeling.
+
+---
+
+### 🔹 Phase 2: Advanced Database Design & ETL Simulation
+
+**Goal:** Extend the core system to include advanced database logic and simulate data pipelines for daily automation.
+
+**Objectives:**
+- Create `MATERIALIZED VIEWS` to cache branch-level revenue summaries.
+- Write `STORED PROCEDURES` using PL/pgSQL to automate:
+  - Daily billing inserts
+  - Summary table updates
+- Schedule ETL tasks using simulated **Airflow DAG logic**.
+- Implement **UPSERT logic** for idempotent inserts.
+- Add **INDEXES** and **PARTITIONING** for performance optimization.
+- Track pipeline execution with logging and timestamps.
+- *(Optional)* Build a dashboard in Power BI or Tableau with direct database connection and auto-refresh.
+
+---
+
+## 📂 Project Structure
+
+HospitalDB-Portfolio/
 │
-├── inserts/
-│   ├── patients_insertion.sql
-│   ├── doctors_insertion.sql
-│   ├── appointments_insertion.sql
-│   ├── treatments_insertion.sql
-│   ├── medications_insertion.sql
-│   ├── diagnoses_insertion.sql
-│   ├── medical_visits_insertion.sql
-│   ├── billings_insertion.sql
-│   ├── branches_insertion.sql
+├── 📁 phase1_core_design/
+│   ├── create_tables.sql
+│   ├── insert_sample_data.sql
+│   ├── exploratory_queries.sql
+│   └── erd_diagram.png
 │
-├── views/
-│   ├── active_doctors_view.sql          # View showing doctors with current appointments
+├── 📁 phase2_advanced_etl/
+│   ├── materialized_views.sql
+│   ├── stored_procedures.sql
+│   ├── airflow_dag_simulation.py
+│   ├── index_partition_strategy.sql
+│   └── etl_logging_strategy.sql
 │
-├── materialized_views/
-│   ├── branch_revenue_summary.sql       # Materialized view for total revenue per branch
-│
-├── enhancements/
-│   ├── add_birthdate_to_patients.sql    # ALTER TABLE script to add birth_date column
-│   ├── calculate_patient_age.sql        # Query to calculate patient ages
-│   ├── realistic_admission_dates.sql    # Update script for realistic admission dates
-│
-├── data/
-│   ├── patients_data.csv
-│   ├── doctors_data.csv
-│   ├── appointments_data.csv
-│   ├── treatments_data.csv
-│   ├── medications_data.csv
-│   ├── diagnoses_data.csv
-│   ├── medical_visits_data.csv
-│   ├── billings_data.csv
-│   ├── branches_data.csv
-│
-├── ETL/
-│   ├── daily_appointments_etl.sql       # Example ETL pipeline script for appointments
-│   ├── branch_revenue_etl.sql           # ETL for branch revenue aggregation
+├── 📁 dashboard_visuals/         # (optional)
+│   ├── hospital_dashboard.pbix   # Power BI
+│   └── top_insights.png
 │
 ├── README.md
+└── requirements.txt              # Optional for Python or Airflow components
+
 
 
 ##**Database Enhancement and Business Value**
@@ -106,32 +127,6 @@ Business Value: Supports rapid operational reporting, ensures data integrity for
 - PostgreSQL / MySQL
 - Git & GitHub (version control)
 - GitHub Desktop
-
-## 🚀 Future Enhancements
- Future Enhancements
-Add ER Diagram (Entity-Relationship Model):
-Visualize table relationships to aid database understanding and presentation.
-
-Automate Inserts with Stored Procedures:
-Create stored procedures for routine data insertions and updates to improve efficiency and maintainability.
-
-Create Reusable Views for Reporting:
-Design SQL views for common queries such as appointment summaries, billing reports, and treatment statistics for quick retrieval and reporting.
-
-Implement Advanced Queries and Window Functions:
-Further analyze patient data trends and treatment outcomes using ranking, partitioning, and analytical functions.
-
-Build Stored Functions and Triggers:
-Automate data validation and update cascades to maintain database integrity.
-
-Integrate with a Python Dashboard for Visualization:
-Use Streamlit or Dash to build interactive dashboards showing patient counts, appointment trends, doctor performance, and billing summaries.
-
-Develop a REST API Layer:
-Connect the database to frontend applications or external systems through a secure API built with Flask or FastAPI.
-
-Deploy on Cloud Database Platforms:
-Practice deploying the database on cloud providers (AWS RDS, Azure SQL) for scalability and production-readiness.
 
 
 ## 👤 Author
