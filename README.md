@@ -84,43 +84,62 @@ Business Value: Supports rapid operational reporting, ensures data integrity for
 - Git & GitHub (version control)
 - GitHub Desktop
 
-  # 🏥 HospitalDB Project — Phase 2: Advanced Data Engineering & Analytics
 
-## Overview
-Phase 2 of the HospitalDB project expands upon the core relational design established in Phase 1. This phase introduces advanced database engineering techniques to simulate real-world healthcare data operations at scale. The focus is on performance optimization, analytics readiness, and ETL pipeline simulation using PostgreSQL.
+HospitalDB – Phase 2: Advanced Database Design & ETL Simulation
+📌 Overview
 
-## Objectives
-- Enhance query performance for large-scale data operations
-- Design analytics-friendly schemas for healthcare insights
-- Simulate real-world ETL workflows and data transformations
-- Enable scalable, maintainable, and audit-ready data architecture
+This phase builds on Phase 1, where we designed the foundational schema for the HospitalDB project.
+In Phase 2, we move towards enterprise-level optimization and ETL workflows by:
 
-## Key Enhancements
+- Caching branch-level revenue summaries with Materialized Views
 
-### ⚙️ Performance Optimization
-- **Indexing**: Strategic B-tree and GIN indexes on high-traffic columns
-- **Partitioning**: Time-based and branch-based partitioning for large tables
-- **Materialized Views**: Precomputed views for heavy aggregations (e.g., monthly revenue)
-- **Query Refactoring**: Use of CTEs and window functions for efficient analytics
+- Implementing Indexing & Partitioning strategies for performance
 
-### 📊 Analytics-Ready Schema
-- **Star Schema Design**: Fact tables (`fact_appointments`, `fact_billing`) and dimension tables (`dim_patient`, `dim_doctor`, `dim_branch`)
-- **Surrogate Keys**: Simplified joins and improved performance
-- **Date Dimension**: Enables time-series analysis and seasonal insights
+- Developing Stored Procedures for ETL-like simulations
 
-### 🔄 ETL Pipeline Simulation
-- **Staging Tables**: Raw data ingestion from external sources
-- **Stored Procedures**: Automated data transformation using PL/pgSQL
-- **Audit Columns**: `created_at`, `updated_at`, `source_system` for data lineage
-- **Error Logging**: Capture and track anomalies during data loads
+- Enforcing Data Quality and Integrity constraints
 
-### 🧠 Advanced SQL Techniques
-- **Window Functions**: Patient visit trends, doctor performance metrics
-- **Recursive Queries**: Hierarchical modeling (e.g., referral chains)
-- **JSON/JSONB Columns**: Semi-structured data for feedback and notes
+🔹 Key Objectives
 
-## 📁 Repository Structure
-HospitalDB/ ├── Scripts_Phase1/ # Core schema and sample data ├── Scripts_Phase2/ # Optimization, ETL, and analytics scripts ├── Data/ # Sample CSVs and staging data ├── Views/ # Materialized views and reporting queries ├── Procedures/ # Stored procedures for ETL simulation └── README.md # Project documentation
+Materialized Views
+
+- Created branch_revenue_summary to pre-compute financial metrics.
+
+- Enables faster reporting across hospital branches.
+
+  Indexes & Partitioning
+
+- Added indexes to improve query performance.
+
+- Partitioned patient/transaction data by branch and time periods for scalability.
+
+Stored Procedures for ETL Simulation
+
+- Automated data transformations (e.g., revenue rollups).
+
+- Prepared foundation for Phase 3 ETL pipeline.
+
+Data Integrity Enhancements
+
+- Constraints and triggers added to ensure clean, consistent data.
+
+📂 Files in this Phase
+
+materialized_views.sql → Scripts to create and refresh revenue summary views.
+
+indexes_and_partitions.sql → Indexing + partitioning strategies.
+
+etl_procedures.sql → Stored procedures for simulating ETL workflows.
+
+constraints_and_triggers.sql → Data quality enforcement.
+
+🚀 Next Step (Phase 3 Preview)
+
+- Full ETL pipeline simulation with staging tables.
+
+- Integration with BI dashboards (Power BI/Tableau).
+
+- Predictive analytics on hospital KPIs.
 
 
 
