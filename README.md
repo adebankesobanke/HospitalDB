@@ -125,14 +125,13 @@ Data Integrity Enhancements
 
 📂 Files in this Phase
 
-materialized_views.sql → Scripts to create and refresh revenue summary views.
+materialized_views.sql
 
-indexes_and_partitions.sql → Indexing + partitioning strategies.
+indexes_and_partitions.sql 
 
-etl_procedures.sql → Stored procedures for simulating ETL workflows.
+etl_procedures.sql
 
-constraints_and_triggers.sql → Data quality enforcement.
-
+constraints_and_triggers.sql 
 🚀 Next Step (Phase 3 Preview)
 
 - Full ETL pipeline simulation with staging tables.
