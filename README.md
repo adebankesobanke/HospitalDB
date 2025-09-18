@@ -107,7 +107,7 @@ Materialized Views
 
 - Enables faster reporting across hospital branches.
 
-  Indexes & Partitioning
+Indexes & Partitioning
 
 - Added indexes to improve query performance.
 
@@ -125,13 +125,14 @@ Data Integrity Enhancements
 
 📂 Files in this Phase
 
-materialized_views.sql
+- materialized_views.sql
 
-indexes_and_partitions.sql 
+- indexes_and_partitions.sql 
 
-etl_procedures.sql
+- etl_procedures.sql
 
-constraints_and_triggers.sql 
+- constraints_and_triggers.sql
+  
 🚀 Next Step (Phase 3 Preview)
 
 - Full ETL pipeline simulation with staging tables.
